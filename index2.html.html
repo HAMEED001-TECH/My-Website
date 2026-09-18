@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hameed | My coding journey</title>
+    <meta name="description" content="welcome to Hameed's website where i share my coding journey,Hobbies and projects.">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>my website</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#register" >Register</a>
+    </nav>
+    <h1 id="home">welcome to my website</h1>
+    </header>
+     <main>
+        <section>
+    <h2 id="about">About me</h2>
+    <p id="aboutText">My name is Hameed.i am learning how to code.</p>
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>football</li>
+        <li>coding</li>
+        <li>watching movies</li>
+        <li>playing video games</li>
+    </ul>
+        </section>
+    <button id="changeButton">click me</button>
+      </script>
+      <section>
+    <h2 id="Register">Register</h2>
+    <form id="registrationform">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="enter your name">
+        <br><br>
+         <label for="email">Email</label>
+         <input type="email" id="email" placeholder="enter your email">
+         <br><br>
+         <label for="password">Password</label>
+         <input type="password" id="password" placeholder="enter your password">
+         <br><br>
+         <label>Gender:</label>
+         <input type="radio" name="Gender" value="male" id="male">male
+         <input type="radio" name="Gender" value="female" id="female">female
+         <br><br>
+         <input type="checkbox" id="terms">i agree to the terms and conditions
+         <br><br>
+         <button type="button" onclick="registeruser()">Register</button>
+    </form>
+      </section>
+    </main>
+    <footer>
+        <p>&copy;2026 Hameed. All Rights Reserved.</p>
+    </footer>
+    <script> 
+        let name="AbdulHameed";
+        alert(name);
+        const age=19;
+        alert(age);
+        if (age>=18){
+          alert("YOU CAN REGISTER");}
+          else {alert("YOU CANNOT REGISTER."); }
+      function sayHello() { 
+         alert("Hello Hameed!Welcome to my website.");
+             }
+       let score=90;
+       if (score>=80) {
+        alert("EXCELLENT");
+       } else if(score>=60) {
+        alert("VERY GOOD");
+       } else if("score>=50") {
+        alert("GOOD");
+       } else {
+        alert("YOU NEED TO IMPROVE"); }
+        let Hobbies=["football","coding","gaming"];
+        Hobbies[2]="movies";
+        Hobbies.push("eating");
+        Hobbies.pop();
+        alert(Hobbies);
+        alert(Hobbies.length);
+        for (let i=0; i<Hobbies.length; i++) {alert(Hobbies[i]);}
+        let count=1;
+        while(count<=5) {alert(count); count++;}
+        let student= {name:"Abdulhameed",age:19,course:"computer science"};
+        student.age=20;
+        student.Hobby="football";
+        alert(student.Hobby);
+        let title=document.getElementById("home");
+        title.textContent ="Hello Hameed!";
+        title.style.color="red";
+        document.body.style.backgroundColor="yellow"
+        let aboutTitle=document.getElementById("about");
+        aboutTitle.textContent="About Hameed";
+        let aboutText=document.getElementById("aboutText");
+        aboutText.textContent="I am becoming a professional developer!";
+        function changeTitle() { title.textContent ="you clicked the button!"; 
+        aboutText.textContent="The button changed this text!"; }
+        let changeButton=document.getElementById("changeButton");
+        changeButton.addEventListener("click",changeTitle);
+        let fullnameinput=document.getElementById("fullname");
+        fullnameinput.addEventListener("input",function() {
+        console.log(fullnameinput.value); });
+         alert("javascript is working");
+      </script>
+</body>
+</html>

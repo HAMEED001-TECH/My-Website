@@ -1,0 +1,98 @@
+body {
+    font-family: arial;
+    background-color: lightblue;
+    text-align: center;
+}
+h1 {
+    color: darkblue;
+}
+h2 {
+    color: purple;
+}
+button { 
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+form {
+    background-color:yellowgreen ;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+input{
+    padding: 8px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+label{
+    font-weight: bold;
+}
+nav a {
+    background-color: darkblue;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration:none ;
+    font-weight: bold;
+}
+nav a:hover {
+    color: orange;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+    border: 2px solid darkblue;
+}
+button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+@media (max-width: 600px) {
+    nav-a { 
+    display: block;
+    margin: 10px;
+}
+form {
+    width: 90%;
+}
+h1 {
+    font-size: 30px;
+}
+}
+section {
+    margin-bottom: 30px;
+}
