@@ -1,13 +1,14 @@
 body {
     font-family: arial;
-    background-color: lightblue;
+    background-color: #081020;
+    color: white;
     text-align: center;
 }
 h1 {
-    color: darkblue;
+    color: white;
 }
 h2 {
-    color: purple;
+    color: #22d3ee;
 }
 button { 
     background-color: darkblue;
@@ -32,22 +33,41 @@ input{
 label{
     font-weight: bold;
 }
-nav a {
-    background-color: darkblue;
-    padding: 15px;
+nav {
+    background-color: #081020;
+    padding: 15px 5%;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-nav a {
+    align-items: center;
+    justify-content: space-between;}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;}
+.logo span {
+    color: #22d3ee;
+    font-size: 24px;
+    font-weight: bold;}
+.logo strong {
+    color: white;}
+.logo b {
+    color: #3882f6;}
+.nav-links {
+    display: flex;
+    gap: 25px;}
+.nav-links a {
     color: white;
-    margin: 0 20px;
-    text-decoration:none ;
-    font-weight: bold;
-}
-nav a:hover {
-    color: orange;
-}
+    text-decoration: none;
+    font-size: 14px;}
+.nav-links a:hover {
+    color: #22d3ee;}
+.contact-btn {
+    background-color: #3882f6;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-decoration: none;}
+.contact-btn:hover {
+    background-color: #22d3ee;}
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -96,3 +116,9 @@ h1 {
 section {
     margin-bottom: 30px;
 }
+.navbar-brand{
+    color: white !important;}
+.navbar .nav-link{
+    color: white !important;}
+.navbar .nav-link:hover{
+    color: #22d3ee !important;}
