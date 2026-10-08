@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hameed | My coding journey</title>
+    <meta name="description" content="welcome to Hameed's website where i share my coding journey,Hobbies and projects.">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg big-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Hameed orolade</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#">skills</a>
+                <a class="nav-link" href="#">Hobbies</a>
+          </div>
+        </div>
+      </nav>
+    <header>
+    <nav>
+      <div class="logo">
+        <span>HO</span>
+        <strong>HAMEED <b>OROLADE</b></strong>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="contact-btn">Get in Touch</a>
+    </nav>
+    </header>
+     <main>
+        <section>
+        <h1 id="home">welcome to my website</h1>
+    <h2 id="about">About me</h2>
+    <p id="aboutText">My name is Hameed.i am learning how to code.</p>
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>football</li>
+        <li>coding</li>
+        <li>watching movies</li>
+        <li>playing video games</li>
+    </ul>
+        </section>
+    <button id="changeButton" class="btn btn-primary">click me</button>
+      </script>
+      <section>
+    <h2 id="Register">Register</h2>
+    <form id="registrationform">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="enter your name">
+        <br><br>
+         <label for="email">Email</label>
+         <input type="email" id="email" placeholder="enter your email">
+         <br><br>
+         <label for="password">Password</label>
+         <input type="password" id="password" placeholder="enter your password">
+         <br><br>
+         <label>Gender:</label>
+         <input type="radio" name="Gender" value="male" id="male">male
+         <input type="radio" name="Gender" value="female" id="female">female
+         <br><br>
+         <input type="checkbox" id="terms">i agree to the terms and conditions
+         <br><br>
+         <button type="button" onclick="registeruser()">Register</button>
+    </form>
+      </section>
+    </main>
+    <footer>
+        <p>&copy;2026 Hameed. All Rights Reserved.</p>
+    </footer>
+    <script> 
+        let name="AbdulHameed";
+        alert(name);
+        const age=19;
+        alert(age);
+        if (age>=18){
+          alert("YOU CAN REGISTER");}
+          else {alert("YOU CANNOT REGISTER."); }
+      function sayHello() { 
+         alert("Hello Hameed!Welcome to my website.");
+             }
+       let score=90;
+       if (score>=80) {
+        alert("EXCELLENT");
+       } else if(score>=60) {
+        alert("VERY GOOD");
+       } else if("score>=50") {
+        alert("GOOD");
+       } else {
+        alert("YOU NEED TO IMPROVE"); }
+        let Hobbies=["football","coding","gaming"];
+        Hobbies[2]="movies";
+        Hobbies.push("eating");
+        Hobbies.pop();
+        alert(Hobbies);
+        alert(Hobbies.length);
+        for (let i=0; i<Hobbies.length; i++) {alert(Hobbies[i]);}
+        let count=1;
+        while(count<=5) {alert(count); count++;}
+        let student= {name:"Abdulhameed",age:19,course:"computer science"};
+        student.age=20;
+        student.Hobby="football";
+        alert(student.Hobby);
+        let title=document.getElementById("home");
+        title.textContent ="Hello Hameed!";
+        title.style.color="red";
+        document.body.style.backgroundColor="yellow"
+        let aboutTitle=document.getElementById("about");
+        aboutTitle.textContent="About Hameed";
+        let aboutText=document.getElementById("aboutText");
+        aboutText.textContent="I am becoming a professional developer!";
+        function changeTitle() { title.textContent ="you clicked the button!"; 
+        aboutText.textContent="The button changed this text!"; }
+        let changeButton=document.getElementById("changeButton");
+        changeButton.addEventListener("click",changeTitle);
+        let fullnameinput=document.getElementById("fullname");
+        fullnameinput.addEventListener("input",function() {
+        console.log(fullnameinput.value); });
+         alert("javascript is working");
+      </script>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">MY SKILLS</h5>
+          <p class="card-text">HTML, CSS, JavaScript and frontend development.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+          <a href="https://github.com/hameed001-tech" class="btn btn-dark">view source code</a>
+        </div>
+      </div>
+</body>
+</html>
